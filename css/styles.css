@@ -9,6 +9,7 @@
   --button-bg: #f5f4fa;
   --bg-color-dark: #2f303a;
   --bg-color-light: #f5f4fa;
+  --border-cards: #eeeeee;
 }
 body {
   font-family: Roboto, sans-serif;
@@ -22,9 +23,6 @@ a {
 img {
   display: block;
   margin-bottom: 0px;
-}
-section {
-  outline: 2px solid blue;
 }
 h1,
 h2,
@@ -41,8 +39,8 @@ h3 {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  /* визуальная обводка */
-  outline: 3px solid red;
+
+  /* outline: 3px solid red; */
 }
 .flexbox {
   display: flex;
@@ -52,7 +50,6 @@ h3 {
   padding-inline-start: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
-  /* outline: 2px solid green; */
 }
 /* header links */
 .link {
@@ -68,7 +65,7 @@ h3 {
   padding-top: 24px;
   padding-bottom: 25px;
   margin-right: 93px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -90,6 +87,7 @@ h3 {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   color: var(--title-text-color);
 }
 .contacts {
@@ -117,11 +115,12 @@ h3 {
 
 /* hero */
 .hero {
-  /* фон для видимости белого текста заголовка */
-  background-color: var(--bg-color-dark);
   /* для красоты */
   height: 600px;
   padding-top: 200px;
+
+  /* фон для видимости белого текста заголовка */
+  background-color: var(--bg-color-dark);
 }
 .hero .container {
   max-width: 700px;
@@ -131,13 +130,14 @@ h3 {
 }
 .hero-title {
   margin-bottom: 30px;
-  /* max-width: 700px; */
   text-align: center;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
   color: var(--contrast-white-color);
 }
 .hero-button {
@@ -147,6 +147,7 @@ h3 {
   padding-bottom: 10px;
   padding-right: 32px;
   padding-left: 32px;
+
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
@@ -180,7 +181,6 @@ h3 {
 
   font-weight: 700;
   line-height: 1.15;
-
   text-transform: uppercase;
 
   color: var(--title-text-color);
@@ -217,6 +217,7 @@ h3 {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+
   background-color: var(--bg-color-light);
 }
 .team .list {
@@ -230,6 +231,7 @@ h3 {
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
   background-color: var(--contrast-white-color);
 }
 .team .list .item:nth-child(4n) {
@@ -328,14 +330,10 @@ h3 {
 
   color: var(--title-text-color);
 
-  box-shadow: none;
-
-  /* border-bottom-color: var(--bg-color-light); */
   background-color: var(--bg-color-light);
   border-radius: 4px;
-  border-color: var(--bg-color-light);
+
   border: 0px;
-  /* border-bottom-style: none; */
 }
 .portfolio-filter:not(:last-child) {
   margin-right: 8px;
@@ -346,6 +344,8 @@ h3 {
 .portfolio-filter:active {
   color: var(--contrast-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border: 0px;
 }
 .portfolio-filter:hover {
   cursor: pointer;
@@ -353,6 +353,7 @@ h3 {
 /* Результаты фильтра */
 .portfolio .list {
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .portfolio .list .item {
@@ -367,22 +368,28 @@ h3 {
 .portfolio .list .item:nth-last-child(-n + 3) {
   margin-bottom: 0px;
 }
-.portfolio-pic {
-  margin-bottom: 20px;
-}
-.portfolio h2 {
-  text-align: center;
-  margin-bottom: 4px;
 
-  color: var(--title-text-color);
+.portfolio-text {
+  border: 1px solid var(--border-cards);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
+  text-align: left;
+  border-top: 0px;
+}
+
+.portfolio h2 {
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
 }
 .portfolio p {
-  text-align: center;
   margin-top: 0px;
   margin-bottom: 0px;
 
