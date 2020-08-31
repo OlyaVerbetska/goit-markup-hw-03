@@ -13,39 +13,39 @@
 
   <body>
     <!--Header-->
-    <header>
-      <div class="container">
-        <div class="header flexbox">
-          <nav class="site-nav flexbox">
-            <a class="logo-primary" href="/"><span class="logo-accent">Web</span>Studio</a>
-            <ul class="list flexbox">
-              <li class="item">
-                <a class="link current" href="">Студия</a>
-              </li>
-
-              <li class="item">
-                <a class="link" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li class="item">
-                <a class="link" href="">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <ul class="contacts list flexbox">
+    <header class="header">
+      <div class="container flexbox">
+        <!-- <div class="header flexbox"> -->
+        <nav class="site-nav flexbox">
+          <a class="logo-primary" href="/"><span class="logo-accent">Web</span>Studio</a>
+          <ul class="list flexbox">
             <li class="item">
-              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a class="link current" href="">Студия</a>
+            </li>
+
+            <li class="item">
+              <a class="link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="item">
-              <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+              <a class="link" href="">Контакты</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <ul class="contacts list flexbox">
+          <li class="item">
+            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a class="link" href="tel:+380991111111">+38 099 111 11 11</a>
+          </li>
+        </ul>
       </div>
+      <!-- </div> -->
     </header>
     <main>
       <!--hero-->
       <section class="hero">
-        <div class="container flexbox">
+        <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <a class="hero-button" href="">Заказать услугу</a>
         </div>
@@ -99,24 +99,32 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="list flexbox">
             <li class="item">
-              <img class="team-avatar" src="./images/team1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <img src="./images/team1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <div class="team-text">
               <h3 class="team-subtitle">Игорь Демьяненко</h3>
               <p>Product Designer</p>
+            </div>
             </li>
             <li class="item">
-              <img class="team-avatar" src="./images/team2.jpg" alt="Ольга Репина" width="270" height="260" />
+              <img src="./images/team2.jpg" alt="Ольга Репина" width="270" height="260" />
+              <div class="team-text">
               <h3 class="team-subtitle">Ольга Репина</h3>
               <p>Frontend Developer</p>
+            </div>
             </li>
             <li class="item">
-              <img class="team-avatar" src="./images/team3.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <img src="./images/team3.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <div class="team-text">
               <h3 class="team-subtitle">Николай Тарасов</h3>
               <p>Marketing</p>
+            </div>
             </li>
             <li class="item">
-              <img class="team-avatar" src="./images/team4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <img src="./images/team4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <div class="team-text">
               <h3 class="team-subtitle">Михаил Ермаков</h3>
               <p>UI Designer</p>
+            </div>
             </li>
           </ul>
         </div>
