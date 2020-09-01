@@ -135,7 +135,7 @@ h3 {
   color: var(--contrast-white-color);
 }
 .hero-button {
-  /* display: block; */
+  display: block;
   /* max-width: 200px; */
   padding: 10px 32px;
 
